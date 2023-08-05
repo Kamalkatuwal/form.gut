@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background-color:aqua;
+    transition-duration: 3s;
+    
+}
+.header{
+    width:20em;
+    height:40vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(20, 30, 40, 0.7);
+    background-color: cornsilk;
+    align-content: center;
+    padding: 5px;
+    animation: side-side 2s ease-out 1s 1 normal both;
+    animation-play-state: paused;
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h1{
+    text-decoration: underline;
+    color: #890a92; 
+    margin-bottom: 20px;
+}
+input{
+    border: none;
+    background-color: cornsilk;
+    border-bottom: 2px dotted rgb(206, 163, 244);
+    color: #db1c1c;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login{
+    background-color: aquamarine;
+    color:navy;
+    border-radius: 4px;
+    width: 5rem;
+    font-size: 16px;
+}
+.login:hover{
+    cursor: pointer;
+}
+.signup{
+    margin-left: 5px;
+}
+span{
+    margin-bottom:5px;
+}
+a{
+    text-decoration: none;
+    transition: text-decoration 3s;
+}
+a:hover{
+    text-decoration: underline;
+}
+.mainwrapper{
+    width:20em;
+    height:40vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px grey;
+}
+#sign-upform{
+    width:20em;
+    height:40vh;
+    border: 1px solid black;
+    position: absolute;
+    top: -50%;
+    left: 105%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(20, 30, 40, 0.7);
+    background-color: cornsilk;
+    align-content: center;
+    padding: 5px;
+    transition: 2s;
+    animation: side 2s ease-in-out 0.2s 1 normal forwards;
+    animation-play-state: paused;
+}
+h2{
+        text-decoration: underline;
+        color: #890a92;
+        margin-top: 10px; 
+        margin-bottom: 10px;
+        align-self: center;
+}
+.signup-btn{
+    background-color: aquamarine;
+    color:navy;
+    border-radius: 4px;
+    width: 5rem;
+    font-size: 16px;
+    align-self: center;
+    margin-bottom: 4px;
+}
+#sign-upform input{
+    border: none;
+    background-color: cornsilk;
+    border-bottom: 2px dotted rgb(206, 163, 244);
+    color: #db1c1c;
+    margin-bottom: 25px;
+    align-self: center;
+    text-align: center;
+    width: 8rem;
+}
+#sign-upform p{
+    margin-left: 4px;
+}
+
+/*animation*/
+@keyframes side{
+50%{
+    top: -50%;
+    left: -2%;
+}
+100%{
+    top: -3%;
+    left: -2%;
+
+}
+}
+@keyframes side-side{
+    from{
+        top: 50%;
+        left: 50%;
+    }
+    to{
+        top:50%;
+        left:-20%;
+    }
+}
+
+@keyframes reversed{
+    50%{
+        top:50%;
+        left:2%;
+    }
+    100%{
+        top: -50%;
+        left: 105%;
+    }
+}
+@keyframes reverseside{
+    from{
+        top:50%;
+        left:-20%;
+    }
+    to{
+        top:50%;
+        left:50%;
+    }
+}
