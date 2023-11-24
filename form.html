@@ -3,15 +3,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=a, initial-scale=1.0">
-    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="form.css">
     <title>Creating a sign in form</title>
 </head>
-<body><div class="mainwrapper">
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+    </div>
+    <div class="mainwrapper">
     <form action="#">
         <div class="header" id="hdr">
             <div class="inside"><h1>login</h1>
             <input type="text" placeholder="Enter your Username">
-            <span><input type="password" placeholder="Enter your password" id="passw"><input type="radio" onclick="myFunction()" id="radio"></span>
+            <input type="email" name="email" placeholder="Enter your Email">
+            <input type="password" placeholder="Enter your password" id="passw">
             <button class="login">Login</button>
         </div>
         <div class="footer"><span>Create an account:<a href="#" class="sign-up" id="we">SignUp</a></span>
@@ -27,7 +32,7 @@
         <p>Already have an account <a href="#" onclick="reve()">Log-in</a></p>
     </div>
 </div>
-    <script src="first.js">
+    <script src="form.js">
 </script>
 </body>
 </html>
