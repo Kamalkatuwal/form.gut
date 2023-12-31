@@ -1,5 +1,6 @@
 let a=document.getElementById("sign-upform");
 let b=document.getElementById("hdr");
+let e=document.querySelector('form');
 let element=document.getElementById("we");
 element.addEventListener("click",enable);
 //check function
